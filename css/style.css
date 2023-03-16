@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 4rem;
+    background-color: rgb(173, 173, 173);
+    z-index: 99;
+}
+
+
+.menu_hamb{
+    padding: 1rem;    
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.panel_menu{
+    width: 50vw;
+    margin-left: 25vw;
+    height: 5vh;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgb(128, 128, 128);
+    transition: transform 1s ;
+    transform: translate(0,100%);
+    z-index: 10;
+    position: absolute;
+    top: 0;
+}
+
+.is_visible{
+    transform:translate(0,250%);
+}
+
+.panel_menu a{
+    text-align: center;
+    padding: auto;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:rgb(0, 0, 0);
+}
+
+.div_principal{
+    width: 100vw;
+    height: 100vh;
+    background-color: salmon;
+}
+
+.cuenta-regresiva{
+    width: 100vw;
+    background-color: blueviolet;
+}
+h2{
+    text-align: center;
+}
