@@ -1,0 +1,10 @@
+{
+  "clubes": [
+    {
+      "nombre": "Boca",
+      "ciudad": "Buenos Aires",
+      "titulos": "71",
+      "id": 1
+    }
+  ]
+}

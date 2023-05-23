@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+	<title>Java Script</title>
 </head>
 <body>
 	<header class="cabecera">
@@ -13,26 +13,80 @@
 		<button class="menu_hamb">Menu</button>
 	</header> 
 	<section class="panel_menu">
-		<a class="menu-item" href="#cuenta">Cuenta regresiva</a>
-		<a class="menu-item" href="">Link 2</a>
+		<a class="menu-item" href="#cuenta">Cumple de mi wacha</a>
+		<a class="menu-item" href="#AjaxFecth">Api REST con fetch</a>
 		<a class="menu-item" href="">Link 3</a>
 		<a class="menu-item cerrar" href="#">x</a>
 	</section>
 	<section class="ejercicios" id="cuenta">
-		<h2>Cuenta Regresiva</h2>
+		<h2>Cumple de mi wacha</h2>
 		<div id="reloj">
 
 		</div>
 	</section>
 
-	<section class="ejercicios" id="cuenta">
+	<section class="ejercicios" id="AjaxFecth">
 		<h2>Ajax con fetch</h2>
 		<div id="fotos" class="fotosGrid">
 			
 		</div>
 	</section>
 
-	<button class="scroll-top-button"></button>
+
+
+
+
+	<section class="ejercicios" id="CRUDfetch">
+		
+		
+		<h2>Api REST con fetch</h2>
+
+		<section id="equipos" class="crud">
+			<article>
+				<h3 class="crud-titulo">Agregar Equipo</h3>
+				<form class="crud-form">
+					<input type="text" name="nombre" required placeholder="nombre"><br>
+					<input type="text" name="ciudad" required placeholder="ciudad"><br>
+					<input type="text" name="titulos" required placeholder="cantidad de títulos"><br>
+					<input type="submit" value="enviar"></input>
+					<input type="hidden" name="id"> <!-- si el value está vacio, se crea un nuevo equipo.
+					Sino, se edita el que tiene el id almacenado en value -->
+				</form>
+			</article>
+			<article>
+				<h3>Ver equipos</h3>
+				<table class="crud-table">
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>Ciudad</th>
+							<th>Titulos</th>
+							<th>Acciones</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+			</article>
+			
+		</section>
+
+		<template id="crud-template">
+			<tr>
+				<td class="name"></td>
+				<td class="ciudad"></td>
+				<td class="titulos"></td>
+				<td>
+					<button class="edit">Editar</button>
+					<button class="delete">Eliminar</button>
+				</td>
+			</tr>
+		</template>
+
+	</section>
+
+
 	
 	<script type="module" src="js/script.js"></script>
 </body>
