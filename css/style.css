@@ -8,6 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 0;
 }
 
@@ -15,9 +16,9 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 8vh;
-    background-color: rgb(173, 173, 173);
+    background-color: #3368FF;
     z-index: 99;
 }
 
@@ -30,13 +31,12 @@ body{
 }
 
 .panel_menu{
-    width: 30vw;
-    margin-left: 70vw;
-    height: 100vh;
+    width: 100%;
+    height: 10vh;
     display: flex;
-    flex-direction: column;
-    align-items: space-evenly;
-    background-color:rgba(247, 243, 19, 0.425);
+    flex-direction: row;
+    align-items: center;
+    background-color:#5C7F92;
     transition: transform 1s ease-out;
     transform: translate(0,-100%);
     z-index: 99;
@@ -67,32 +67,21 @@ body{
 
 
 
-.div_principal{
-    width: 100vw;
-    height: 100vh;
-    background-color: salmon;
-}
-
 .ejercicios{
-    width: 100vw;
+    width: 70%;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
 }
 .ejercicios h2{
-    width: 100vw;
+    width: 100%;
     text-align: center;
     background-color: blueviolet;
 }
 
-.scroll-tpo-button{
-    padding: 1rem;
-    background-color: yellow;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-}
 
 .fotosGrid{
     display: grid;

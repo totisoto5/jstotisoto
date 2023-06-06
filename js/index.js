@@ -1,4 +1,4 @@
-import {contador} from "../js/contador.js";
+import {contador} from "./contador.js";
 import menuHamb from "./menuHamb.js";
 import ajaxFetch from "./ajax-fetch.js";
 import crudFetch from "./CRUD-fetch.js";
